@@ -1,0 +1,109 @@
+/* 
+================================================================================
+WSP COMPONENT LIBRARY STYLESHEET
+================================================================================ */
+body {
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-size: 16px;
+    height: 100%;
+    background-image: url(../images/witewall_3.png)
+}
+
+#wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+
+    margin-top: 20px;
+    border-radius: 3px;
+    /* green: #197319 */
+}
+
+/* HEADER SPECIFIC ======================================== */
+header {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.logo {
+    content: url("../images/logo.png");
+    width: 300px;
+    height: auto;
+}
+
+/* ABOUT SPECIFIC ======================================== */
+#about {
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 20px;    
+}
+
+#about img {
+    padding: 23px;
+    float: left;
+    display: inline;
+}
+
+#about h2 {
+    float: right;
+    display: inline;
+    width: 55%;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 23px 0 0 0;
+	
+}
+
+#about p {
+    float: right;
+    display: inline;
+    max-width: 55%;
+    line-height: 26px;
+    padding-bottom: 20px;
+	text-align: justify;
+}
+
+/* COMPONENTS SPECIFIC ======================================== */
+article {
+    margin: 40px 0;
+}
+
+article img {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+article h1 {
+    font-size: 30px;
+}
+
+article h1, article h2, article p {
+    width: 95%;
+    display: block;
+    margin: 0 auto;   
+}
+
+article p {
+    padding: 20px 0;
+	text-align: justify;
+}
+
+#component5 img {
+	width: 65%;
+}
+
+#component6 img {
+	width: 65%;
+}
+
+#component7 img {
+	width: 60%;
+}
+
+footer {
+	float: right;
+	margin-right: 23px;
+	font-size: 12px;
+}
