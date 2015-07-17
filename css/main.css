@@ -90,6 +90,10 @@ article p {
 	text-align: justify;
 }
 
+.button {
+    margin-left: 2.5%;
+}
+
 #component5 img {
 	width: 65%;
 }
