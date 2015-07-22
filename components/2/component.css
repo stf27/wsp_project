@@ -6,3 +6,79 @@ COMPONENT STYLESHEET
 /* HEADER ======================================== */
 
 /* HEADER ======================================== */
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+article {
+    width: 25%;
+    float: left;
+    padding: 10px 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+article:nth-child(1) {
+    background-image: url(creditCard.PNG);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+article:nth-child(2) {
+    background-image: url(phones.PNG);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+article:nth-child(3) {
+    background-image: url(security.PNG);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+article:nth-child(4) {
+    background-image: url(pricing.PNG);
+    background-repeat: no-repeat;
+    background-position: center 7px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 2px 0;
+    padding: 100px 10px 0 10px;
+}
+
+p {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+@media (max-width: 800px) {
+    article {
+        width: 50%;
+    }
+    
+    article:nth-child(3) {
+        clear: both;
+    }
+}
+
+@media (max-width: 525px) {
+    article {
+        width: 100%;
+    }
+}

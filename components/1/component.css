@@ -6,3 +6,65 @@ COMPONENT STYLESHEET
 /* HEADER ======================================== */
 
 /* HEADER ======================================== */
+
+nav {
+    background-color: #ff4c2e;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.wrapper {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav img {
+    display: block;
+    float: left;
+}
+
+ul {
+    float: right;
+    padding-top: 4px;
+}
+
+li {
+    float: left;
+    padding: 15px 15px;
+}
+
+li a {
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (max-width: 850px) {
+    li a {
+        font-size: 14px;
+    }
+    
+    nav img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 660px) {
+    ul {
+        display: none;
+    }
+    
+    a:after {
+        content: "Menu";
+        font-family: 'Montserrat', sans-serif;
+        color: #111;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        float: right;
+        padding-top: 12px;
+    }
+}
