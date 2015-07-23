@@ -6,3 +6,41 @@ COMPONENT STYLESHEET
 /* HEADER ======================================== */
 
 /* HEADER ======================================== */
+section {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    max-width: 905px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background-color: #414142;
+    padding-bottom: 70px;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    padding-top: 60px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-bottom: -2px;
+}
+
+h3 span {
+    color: #a4ab31;
+}
+
+p {
+    font-size: 14px;
+    color: #999;
+    margin: 8px;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
