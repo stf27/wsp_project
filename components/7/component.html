@@ -9,19 +9,21 @@
 
 	<!-- Component -->
     <section>
-        <img src="http://placehold.it/150x150" alt="Mailchimp">
+        <img src="freddie_o.png" alt="Mailchimp">
         <!-- add ptag -->
         <form>
-            <p>
+            <p id="name">
                 Username
                 <a href="#">I forgot</a>
-                <input type="text" name="username" placeholder="&#42;">
+                <input type="text" name="username">
             </p>
 
-            <p>
-                Password
-                <a href="#">I forgot</a>
-                <input type="password" name="password" placeholder="&#42;">
+            <p id="password">
+                <label>
+                    Password
+                    <a href="#">I forgot</a>
+                </label>
+                <input type="password" name="password">
 
                 <label for="showPassword">
                     <input type="checkbox" name="showPassword" id="showPassword">
@@ -31,14 +33,14 @@
 
             <p><button type="submit" value="log in">Log In</button></p>
 
-            <p>
+            <p id="logged">
                 <label for="stayLoggedIn">
                     <input type="checkbox" name="stayLoggedIn" id="stayLoggedIn">
-                    <p>Stay logged in</p>
+                    Stay logged in
                 </label>
             </p>
 
-            <p>
+            <p id="extras">
                 <a href="#">Create an account</a>
                 &#183;
                 <a href="#">Trouble logging in?</a>
