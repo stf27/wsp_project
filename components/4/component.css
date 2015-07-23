@@ -8,37 +8,33 @@ COMPONENT STYLESHEET
 /* HEADER ======================================== */
 section {
     background-image: url(hip-dog.jpg);
+    background-size: 70%;
     background-repeat: no-repeat;
     background-color: #ffde00;
-    max-width: 400px;
-    height: 600px;
-    padding-left: 690px;
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 10px 40px 120px 650px;
     text-align: center;
-}
-
-h2 {
-    font-family: sans-serif;
-    font-size: 36px;
-    font-weight: 900;
-    width: 260px;
-}
-
-h1 {
-    
-}
-
-p {
-    
-}
-
-h3 {
-    
+    display: block;
+    font-family: "helvetica", sans-serif;
 }
 
 img {
-    
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 20px;
 }
 
 a {
-    
+    display: inline;
+    background-color: #faa61a;
+    padding: 8px 15px 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+    text-decoration: none;
+    box-shadow: 0 1px 1px;
+    border: 1px solid #f59b05;
+    border-radius: 5px;
+    text-transform: uppercase;
 }

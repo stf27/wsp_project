@@ -6,6 +6,14 @@ COMPONENT STYLESHEET
 /* HEADER ======================================== */
 
 /* HEADER ======================================== */
+html, body {
+    height: 100%;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 article {
     margin: 0;
@@ -16,27 +24,23 @@ article {
     vertical-align: top;
 }
 
-img {
-    z-index: 3;
-}
-
-img:hover + .personInfo {
-    display: block;
-    left: -100px;
-    z-index: 2;
-}
-
 .personInfo {
+    background:rgba(0,0,0,.5);
     color: #fff;
-    display: none;
-    margin-top: -312px;
-    padding: 94px 0 101px 0;
-    z-index: 1;
+    opacity: 0;
+    margin-top: -335px;
+    padding: 100px 0 101px 0;
     text-align: center;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+}
+
+article:hover .personInfo{
+    opacity: 1;
 }
 
 h3, h4 {
-    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-family: "Helvetica", sans-serif;
     margin: 0;
 }
 
@@ -51,7 +55,6 @@ h4 {
     margin-bottom: 50px;
 }
 
-
 ul {
     margin: 40px 0 0 -40px;
 }
@@ -63,4 +66,14 @@ li {
     padding: 20px;
     margin: 0 3px;
     display: inline;
+}
+
+@media (max-width: 840px) {
+    article {
+        width: calc(96%/3);
+    }
+    
+    .personInfo {
+        padding: 150px 0 68px 0;
+    }
 }
