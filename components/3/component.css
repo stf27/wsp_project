@@ -6,3 +6,61 @@ COMPONENT STYLESHEET
 /* HEADER ======================================== */
 
 /* HEADER ======================================== */
+
+article {
+    margin: 0;
+    padding: 0;
+    width: calc(99%/3);
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+
+img {
+    z-index: 3;
+}
+
+img:hover + .personInfo {
+    display: block;
+    left: -100px;
+    z-index: 2;
+}
+
+.personInfo {
+    color: #fff;
+    display: none;
+    margin-top: -312px;
+    padding: 94px 0 101px 0;
+    z-index: 1;
+    text-align: center;
+}
+
+h3, h4 {
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    display: inline;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+
+ul {
+    margin: 40px 0 0 -40px;
+}
+
+li {
+    background-image: url(http://placehold.it/40x40);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    margin: 0 3px;
+    display: inline;
+}

@@ -6,3 +6,39 @@ COMPONENT STYLESHEET
 /* HEADER ======================================== */
 
 /* HEADER ======================================== */
+section {
+    background-image: url(hip-dog.jpg);
+    background-repeat: no-repeat;
+    background-color: #ffde00;
+    max-width: 400px;
+    height: 600px;
+    padding-left: 690px;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    width: 260px;
+}
+
+h1 {
+    
+}
+
+p {
+    
+}
+
+h3 {
+    
+}
+
+img {
+    
+}
+
+a {
+    
+}
