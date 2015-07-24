@@ -6,3 +6,96 @@ COMPONENT STYLESHEET
 /* HEADER ======================================== */
 
 /* HEADER ======================================== */
+footer {
+    max-width: 960px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 100px auto;
+    width: 780px;
+    padding: 0;
+}
+
+li {
+    float: left;
+    margin-right: 80px;
+    width: 92px;
+    height: 88px;
+    display: list-item;
+}
+
+ul a {
+    display: block;
+}
+
+li:nth-child(1) a {
+    background-image: url(social.png);
+    height: 88px;
+    width: 92px;
+    background-position: left top;
+}
+
+li:nth-child(1):hover a {
+    background-position: left bottom;
+}
+
+li:nth-child(2) a {
+    background-image: url(social.png);
+    height: 88px;
+    width: 92px;
+    background-position: 25% top;
+}
+
+li:nth-child(2):hover a {
+    background-position: 25% bottom;
+}
+
+li:nth-child(3) a {
+    background-image: url(social.png);
+    height: 88px;
+    width: 92px;
+    background-position: 50% top;
+}
+
+li:nth-child(3):hover a {
+    background-position: 50% bottom;
+}
+
+li:nth-child(4) a {
+    background-image: url(social.png);
+    height: 88px;
+    width: 92px;
+    background-position: 75% top;
+}
+
+li:nth-child(4):hover a {
+    background-position: 75% bottom;
+}
+
+li:nth-child(5) a {
+    background-image: url(social.png);
+    height: 88px;
+    width: 92px;
+    background-position: right top;
+}
+li:nth-child(5) {
+    margin-right: 0;
+}
+
+li:nth-child(5):hover a {
+    background-position: right bottom;
+}
+
+footer:nth-child(2) {
+    font-family: georgia, serif;
+    font-size: 16px;
+    padding: 50px 0;
+    clear: both;
+    border-top: 1px solid #c5c5c5;
+    text-align: center;
+    color: #c5c5c5;
+}

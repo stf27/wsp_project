@@ -10,8 +10,8 @@ html, body {
     height: 100%;
 }
 
-section {
-    max-width: 1000px;
+#container {
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -21,18 +21,34 @@ article {
     width: calc(99%/3);
     overflow: hidden;
     display: inline-block;
-    vertical-align: top;
+    float: left;
 }
 
 .personInfo {
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
     background:rgba(0,0,0,.5);
     color: #fff;
     opacity: 0;
-    margin-top: -335px;
-    padding: 100px 0 101px 0;
+    margin-top: -650px;
+    padding: 250px 0 240px 0;
     text-align: center;
     -webkit-transition: opacity .5s ease;
     -moz-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    -webkit-backface-visibility: hidden;
+}
+
+hr {
+    width: 45px;
+    padding-top: 10px;
+    opacity: 1;
+    border: 0;
+    border-bottom: 1px solid #eee;
 }
 
 article:hover .personInfo{
@@ -56,24 +72,134 @@ h4 {
 }
 
 ul {
-    margin: 40px 0 0 -40px;
+    margin: 20px 0 0 -40px;
 }
 
 li {
-    background-image: url(http://placehold.it/40x40);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 20px;
-    margin: 0 3px;
     display: inline;
+    width: 0%;
 }
 
-@media (max-width: 840px) {
+a {
+    background-size: 70%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 10px;
+    border-radius: 100px;
+    border: 1px solid #68bfb6;
+    background-color: #68bfb6;
+}
+
+a:hover {
+    background-color: #539891;
+    border-color: #539891;
+}
+
+/* First Person */
+article:nth-child(1) li:nth-child(1) a {
+    background-image: url(sprites.png);
+    background-repeat: no-repeat;
+    background-position: 8px -167px;
+}
+
+article:nth-child(1) li:nth-child(2) a {
+    background-image: url(sprites.png);
+    background-repeat: no-repeat;
+    background-position: 8px -226px;
+}
+
+article:nth-child(1) li:nth-child(3) a {
+    background-image: url(sprites.png);
+    background-repeat: no-repeat;
+    background-position: 8px -285px;
+}
+
+/* Second Person */
+article:nth-child(2) li:nth-child(1) a {
+    background-image: url(sprites.png);
+    background-repeat: no-repeat;
+    background-position: 7px -399px;
+}
+
+article:nth-child(2) li:nth-child(2) a {
+    background-image: url(sprites.png);
+    background-repeat: no-repeat;
+    background-position: 8px -167px;
+}
+
+article:nth-child(2) li:nth-child(3) a {
+    background-image: url(sprites.png);
+    background-repeat: no-repeat;
+    background-position: 8px -285px;
+}
+
+article:nth-child(2) li:nth-child(4) a {
+    background-image: url(sprites.png);
+    background-repeat: no-repeat;
+    background-position: 7px -50px;
+}
+
+/* Third Person */
+article:nth-child(3) li:nth-child(1) a {
+    background-image: url(sprites.png);
+    background-repeat: no-repeat;
+    background-position: 8px -167px;
+}
+
+article:nth-child(3) li:nth-child(2) a {
+    background-image: url(sprites.png);
+    background-repeat: no-repeat;
+    background-position: 8px -285px;
+}
+
+@media (max-width: 1600px) {
+    .personInfo {
+        margin-top: -540px;
+        padding: 200px 0 180px 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .personInfo {
+        margin-top: -470px;
+        padding: 220px 0 90px 0;
+    }
+}
+
+@media (max-width: 1024px) {
     article {
-        width: calc(96%/3);
+        width: 50%;
     }
     
     .personInfo {
-        padding: 150px 0 68px 0;
+        margin-top: -510px;
+        padding: 220px 0 130px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    article {
+        width: 100%;
+    }
+    
+    .personInfo {
+        margin-top: -690px;
+        padding: 290px 0 240px 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .personInfo {
+        margin-top: -550px;
+        padding: 270px 0 120px 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .personInfo {
+        margin-top: -360px;
+        padding: 160px 0 40px 0;
     }
 }
