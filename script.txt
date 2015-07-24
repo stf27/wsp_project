@@ -40,7 +40,107 @@ The hover transition was pretty simple.
 I created a slightly transparent background color, added a transition effect, and set its opacity to 0.
 This hides the hover and the personal content until you actually hover over the image. 
 At which time the opacity is set to 1 and you see everything.
-One major problem I had was the darkened hover was disappearing after the animation was complete.
+Finally, one major problem I had was the darkened hover was disappearing after the animation was complete.
 I did some research and found that setting the position to absolute would fix it.
 When I tried that, my entire component broke. So I dug deeper.
-Eventually I found the backface-visibility: hidden attribute and that solved all of my problems.
+Eventually I found the backface-visibility: hidden attribute and that solved all my problems.
+
+To stylize the call to action, I first added the dog to the background of the main section.
+I then added padding to the section in order to move all the content of the call to action to the right side.
+All content is display: block because there is nothing next to each other. Everything is on top of each other.
+After that, I added the images to the content.
+I then stylized the anchor to look like a button, using borders and so on, that would take the user to a purchase page.
+
+To stylize this component, I first set its max width and centered it in order to encompass the component and restrict how big it could get.
+Next I stylized the header to be a certain font, size, and color. And then I edited the letter spacing to replicate the look of the website.
+From there, I formatted the input boxes to have padding around them to make that bigger box look.
+I changed the borders of the input boxes to be lighter and set their width to 100% of the section enclosing them.
+I then set their display to block in order to stack each piece on top of each other.
+I then formatted the button to have a green border and green fill on hover and I added an ease-in-out transition effect.
+Add some padding to the button and I was finished.
+
+The blog was pretty straightforward. First I set the max width of the header and the max width of the articles.
+They were specified separately because the header extended out much further than the articles did.
+I then set a border bottom on my header and and h2 within the header.
+This allowed me to create the double line that you see at the top of the page.
+Within each article I styled the font, size, and color for each header, anchor, and blockquote.
+I then used to nth-child selector to access one of the articles and add the dashed line you see between each article.
+Finally, all the content was centered except for one link.
+To access this link and right align it, I used the last-child selector and floated it right.
+
+For this component I first set the max width of the form.
+I then centered the image above the form using margin 0 auto.
+I then stylized the input boxes to be their specific size and padding.
+To get the I forgot links on the right side, I used float right.
+In order to attach the show section and its checkbox to the password field, 
+I had to use the nth-child selector and then apply inline-block on the input field and vertical align to get it to line up exactly with the field.
+I then added a percent padding to help it scale as the window changed sizes.
+One thing I wasn't able to accomplish was changing the checkbox to the custom image that the site uses.
+I could not access the file in order to work with it.
+Next came the button and the stay logged in field.
+I formatted them with margins and padding like the rest of the component and then I floated the button left and the stay logged in right.
+Next I cleared the float for the links for creating and account and trouble logging in.
+I aligned the elements in the center using text-align, removed their text decoration, and added a border bottom to each link. 
+If you look closely to the links on the actual page, you will see that they used borders as well instead of text decoration.
+Finally, I added a couple of media queries to lower the font size and adjust the padding for the button, show password, and stay logged in elements as the screen became smaller.
+
+For this component, I set the max width and centered it to contain the section.
+I then set the font properties and background color for the component.
+I then added the image of the map at the top of the section and set its width to fill it.
+I then accessed the text and formatted it to to be white and grey (except for department which I made green).
+Finally I text-aligned everything to center it in the component.
+
+For the news stream I was unable to get the profile pictures for the post I was recreating but I was able to access certain icons that each post uses.
+To format this component, I broke it up into many different sections.
+Next there I set the font properties for the entire article.
+From there I used the nth-child selector to access each of the individual sections and align and format their content one at a time.
+I floated some things left and couple things right but for the most part I was able to recreate the layout using display block and display inline.
+As a final touch, I added a background color to the page itself to recreate the look Google+ has in their background.
+
+For my footer component, I broke the pieces up into two footers.
+The first footer contains the images and links to this person's social media pages.
+To create the same look I first got the image they used for all the icons.
+I then went in to each individual link and set the width and height in order to create a correctly sized box to hold the icons.
+Next I set the background image and background position for each link according to what the social media link was.
+The hover had separate icons that it used as well.
+So I went in and did the same process for them.
+I then set the width of the unordered list and added a right margin to each list element.
+This allowed me to restrict how far the icons fan out and it also allowed me to center it on the page.
+Finally I formatted the bottom footer to have a top border, centered the text, and added lots of padding to recreate the look on the website.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

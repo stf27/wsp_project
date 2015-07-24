@@ -8,12 +8,14 @@ COMPONENT STYLESHEET
 /* HEADER ======================================== */
 section {
     background-image: url(hip-dog.jpg);
+    background-position: 0px 20px;
     background-size: 70%;
     background-repeat: no-repeat;
     background-color: #ffde00;
     max-width: 240px;
+    min-width: 150px;
     margin: 0 auto;
-    padding: 10px 40px 120px 650px;
+    padding: 20px 40px 140px 650px;
     text-align: center;
     display: block;
     font-family: "helvetica", sans-serif;
@@ -26,7 +28,6 @@ img {
 }
 
 a {
-    display: inline;
     background-color: #faa61a;
     padding: 8px 15px 6px;
     font-size: 14px;
