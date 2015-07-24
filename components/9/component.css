@@ -18,6 +18,7 @@ article {
     background-color: #fff;
     font-size: 13px;
     border: 1px solid #e5e5e5;
+    box-shadow: 1px 1px 4px #ccc;
 }
 
 a {
@@ -110,6 +111,7 @@ section:nth-child(4) button {
     padding: 0 15px;
     outline: none;
     width: auto;
+    font-weight: bold;
 }
 
 section:nth-child(4) img {
@@ -127,6 +129,11 @@ article:nth-child(2) {
     
 }
 
+article:nth-child(2) section:nth-child(1) {
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
 article:nth-child(2) section:nth-child(1) a{
     color: #111;
 }
@@ -139,4 +146,31 @@ article:nth-child(2) section:nth-child(1) a:nth-child(2){
     margin: 1px 0 0 4px;
 }
 
+article:nth-child(2) section:nth-child(2) img {
+    display: block;
+    float: left;
+    padding: 4px 0 45px 0;
+}
 
+article:nth-child(2) section:nth-child(2) h4 {
+    display: inline;
+    padding-right: 5px;
+}
+
+article:nth-child(2) section:nth-child(2) p:nth-child(3) {
+    display: inline;
+}
+
+article:nth-child(2) section:nth-child(2) p:nth-child(4) {
+    display: block;
+    width: 90%;
+    margin: 1px 0 0 43px;
+}
+
+form input {
+    width: 98%;
+    padding: 6px 0 6px 4px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    margin: 10px 0;
+}
