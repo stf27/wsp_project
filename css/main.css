@@ -27,7 +27,7 @@ header {
 
 .logo {
     content: url("../images/logo.png");
-    width: 300px;
+    max-width: 40%;
     height: auto;
 }
 
@@ -110,4 +110,36 @@ footer {
 	float: right;
 	margin-right: 23px;
 	font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    #about img {
+        clear: both;
+        display: block;
+    }
+    
+    #about h2, #about p {
+        clear: both;
+        display: block;
+        width: 98%;
+        margin: 10px auto;
+    }
+    
+    #about p {
+        max-width: 98%;
+    }
+    
+    img {
+        width: 60%;
+    }
+    
+    .logo {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 490px) {
+    .logo {
+        max-width: 100%;
+    }
 }

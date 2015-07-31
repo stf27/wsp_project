@@ -21,25 +21,25 @@ article {
     text-align: center;
 }
 
-article:nth-child(1) {
+#credit {
     background-image: url(creditCard.PNG);
     background-repeat: no-repeat;
     background-position: center 0;
 }
 
-article:nth-child(2) {
+#mobileDevices {
     background-image: url(phones.PNG);
     background-repeat: no-repeat;
     background-position: center 0;
 }
 
-article:nth-child(3) {
+#security {
     background-image: url(security.PNG);
     background-repeat: no-repeat;
     background-position: center 0;
 }
 
-article:nth-child(4) {
+#pricing {
     background-image: url(pricing.PNG);
     background-repeat: no-repeat;
     background-position: center 7px;

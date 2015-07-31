@@ -10,9 +10,10 @@ html, body {
     height: 100%;
 }
 
-#container {
+section:first-child {
     max-width: 1920px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 article {
@@ -21,18 +22,29 @@ article {
     width: calc(99%/3);
     overflow: hidden;
     float: left;
+    position: relative;
 }
 
-.personInfo {
+h3 {
+    padding-top: 37%;
+}
+
+img {
+    display: block;
+}
+
+article section {
     overflow: hidden;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
     display: block;
     margin: 0;
-    padding: 0;
     background:rgba(0,0,0,.5);
     color: #fff;
     opacity: 0;
-    margin-top: -650px;
-    padding: 250px 0 240px 0;
+    vertical-align: middle;
     text-align: center;
     -webkit-transition: opacity .5s ease;
     -moz-transition: opacity .5s ease;
@@ -42,15 +54,16 @@ article {
     -webkit-backface-visibility: hidden;
 }
 
-hr {
-    width: 45px;
-    padding-top: 10px;
-    opacity: 1;
-    border: 0;
-    border-bottom: 1px solid #eee;
+h4:after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 40px;
+    margin: 20px auto 0 auto;
+    border-top: 1px solid #fff;
 }
 
-article:hover .personInfo{
+article:hover section{
     opacity: 1;
 }
 
@@ -153,28 +166,9 @@ article:nth-child(3) li:nth-child(2) a {
     background-position: 8px -285px;
 }
 
-@media (max-width: 1600px) {
-    .personInfo {
-        margin-top: -540px;
-        padding: 200px 0 180px 0;
-    }
-}
-
-@media (max-width: 1400px) {
-    .personInfo {
-        margin-top: -470px;
-        padding: 220px 0 90px 0;
-    }
-}
-
 @media (max-width: 1024px) {
     article {
         width: 50%;
-    }
-    
-    .personInfo {
-        margin-top: -510px;
-        padding: 220px 0 130px 0;
     }
 }
 
@@ -182,23 +176,10 @@ article:nth-child(3) li:nth-child(2) a {
     article {
         width: 100%;
     }
-    
-    .personInfo {
-        margin-top: -690px;
-        padding: 290px 0 240px 0;
-    }
-}
-
-@media (max-width: 560px) {
-    .personInfo {
-        margin-top: -550px;
-        padding: 270px 0 120px 0;
-    }
 }
 
 @media (max-width: 375px) {
-    .personInfo {
-        margin-top: -360px;
-        padding: 160px 0 40px 0;
+    h3 {
+        padding-top: 20%;
     }
 }
